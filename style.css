@@ -2,12 +2,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:"Cairo",sans-serif;
 }
 
 body{
 
-background:linear-gradient(135deg,#0b2b8f,#5b21b6);
+font-family:"Cairo",sans-serif;
+background:linear-gradient(160deg,#03081f,#08184d,#2b0b78);
 color:white;
 min-height:100vh;
 overflow-x:hidden;
@@ -24,17 +24,20 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-pointer-events:none;
 z-index:0;
+pointer-events:none;
 
 }
 
 .star{
 
 position:absolute;
-background:white;
+background:#fff;
 border-radius:50%;
-box-shadow:0 0 8px white;
+box-shadow:
+0 0 8px white,
+0 0 18px white;
+
 animation:twinkle infinite ease-in-out;
 
 }
@@ -48,7 +51,7 @@ transform:scale(.8);
 
 50%{
 opacity:1;
-transform:scale(1.5);
+transform:scale(1.6);
 }
 
 100%{
@@ -58,126 +61,101 @@ transform:scale(.8);
 
 }
 
+/* المحتوى */
+
 header{
 
 position:relative;
-z-index:1;
+z-index:2;
 text-align:center;
-padding:40px 20px 20px;
+padding-top:55px;
 
 }
+
+/* شعار الموقع */
 
 header h1{
 
-font-size:38px;
-font-weight:800;
+font-family:"Orbitron",sans-serif;
+
+font-size:60px;
+
+font-weight:900;
+
+letter-spacing:3px;
+
+background:linear-gradient(90deg,#ffffff,#6ec8ff,#b56dff);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+
+0 0 18px rgba(110,200,255,.5),
+
+0 0 35px rgba(181,109,255,.5);
 
 }
+
+/* الوصف */
 
 header p{
 
-margin-top:8px;
-font-size:17px;
+margin-top:12px;
+
+font-size:18px;
+
 opacity:.9;
 
+font-weight:600;
+
 }
+
+/* البحث */
 
 .search-box{
 
 position:relative;
-z-index:1;
-padding:20px;
+
+z-index:2;
+
+display:flex;
+
+justify-content:center;
+
+margin-top:35px;
 
 }
 
 .search-box input{
 
-width:100%;
-padding:16px;
+width:90%;
+
+max-width:650px;
+
+padding:18px 22px;
+
+font-size:18px;
+
 border:none;
-border-radius:16px;
-font-size:17px;
+
 outline:none;
+
+border-radius:18px;
+
 background:rgba(255,255,255,.18);
-backdrop-filter:blur(10px);
+
+backdrop-filter:blur(12px);
+
 color:white;
+
+box-shadow:0 0 25px rgba(255,255,255,.08);
 
 }
 
 .search-box input::placeholder{
 
-color:#eeeeee;
-
-}
-
-.categories{
-
-position:relative;
-z-index:1;
-padding:20px;
-
-}
-
-.categories h2{
-
-text-align:center;
-margin-bottom:20px;
-font-size:26px;
-
-}
-
-.grid{
-
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:18px;
-
-}
-
-.card{
-
-background:rgba(255,255,255,.15);
-backdrop-filter:blur(12px);
-border-radius:22px;
-padding:30px 15px;
-text-decoration:none;
-color:white;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-transition:.3s;
-border:1px solid rgba(255,255,255,.2);
-
-}
-
-.card:hover{
-
-transform:translateY(-6px) scale(1.03);
-background:rgba(255,255,255,.22);
-
-}
-
-.card{
-
-font-size:42px;
-
-}
-
-.card span{
-
-margin-top:12px;
-font-size:18px;
-font-weight:700;
-
-}
-
-footer{
-
-position:relative;
-z-index:1;
-text-align:center;
-padding:35px 20px;
-opacity:.8;
+color:#ececec;
 
 }
