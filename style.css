@@ -289,3 +289,46 @@ font-size:22px;
 }
 
 }
+/* أحدث الخلفيات */
+
+.latest{
+position:relative;
+z-index:2;
+padding:20px;
+}
+
+.latest h2{
+text-align:center;
+font-size:30px;
+margin-bottom:20px;
+font-weight:800;
+}
+
+.wall-slider{
+display:flex;
+overflow-x:auto;
+gap:15px;
+padding-bottom:10px;
+scroll-behavior:smooth;
+}
+
+.wall-slider::-webkit-scrollbar{
+display:none;
+}
+
+.wall-slider a{
+flex:none;
+}
+
+.wall-slider img{
+width:180px;
+height:320px;
+object-fit:cover;
+border-radius:20px;
+display:block;
+transition:.3s;
+}
+
+.wall-slider img:hover{
+transform:scale(1.05);
+}
