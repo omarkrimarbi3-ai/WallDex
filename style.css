@@ -306,12 +306,25 @@ font-weight:800;
 
 .wall-slider{
 display:flex;
+flex-wrap:nowrap;
 overflow-x:auto;
 overflow-y:hidden;
 gap:15px;
 padding:10px 0;
 scroll-behavior:smooth;
-white-space:nowrap;
+}
+
+.wall-slider a{
+flex:0 0 auto;
+display:block;
+}
+
+.wall-slider img{
+width:170px;
+height:300px;
+display:block;
+object-fit:cover;
+border-radius:20px;
 }
 
 .wall-slider::-webkit-scrollbar{
