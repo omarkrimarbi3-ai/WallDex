@@ -307,9 +307,11 @@ font-weight:800;
 .wall-slider{
 display:flex;
 overflow-x:auto;
+overflow-y:hidden;
 gap:15px;
-padding-bottom:10px;
+padding:10px 0;
 scroll-behavior:smooth;
+white-space:nowrap;
 }
 
 .wall-slider::-webkit-scrollbar{
@@ -321,14 +323,19 @@ flex:none;
 }
 
 .wall-slider img{
-width:180px;
-height:320px;
+width:170px;
+height:300px;
 object-fit:cover;
 border-radius:20px;
 display:block;
-transition:.3s;
+flex-shrink:0;
 }
 
 .wall-slider img:hover{
 transform:scale(1.05);
+}
+.wall-slider a{
+display:block;
+flex:0 0 auto;
+text-decoration:none;
 }
