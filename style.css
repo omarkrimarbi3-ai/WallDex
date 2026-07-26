@@ -235,11 +235,25 @@ font-size:48px;
 
 .card span{
 
-margin-top:14px;
+margin-top:18px;
 
-font-size:24px;
+font-family:"Cairo",sans-serif;
 
-font-weight:800;
+font-size:30px;
+
+font-weight:900;
+
+background:linear-gradient(90deg,#ffffff,#9ddcff,#d29cff);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 10px rgba(255,255,255,.5),
+0 0 20px rgba(120,180,255,.4);
+
+letter-spacing:.5px;
 
 }
 
@@ -297,11 +311,31 @@ z-index:2;
 padding:20px;
 }
 
-.latest h2{
+.latest h2,
+.categories h2{
+
+font-family:"Cairo",sans-serif;
+
+font-size:40px;
+
+font-weight:900;
+
 text-align:center;
-font-size:30px;
-margin-bottom:20px;
-font-weight:800;
+
+background:linear-gradient(90deg,#ffffff,#7fd3ff,#b56dff);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 12px rgba(110,200,255,.7),
+0 0 25px rgba(181,109,255,.6);
+
+margin-bottom:30px;
+
+letter-spacing:1px;
+
 }
 
 .wall-slider{
