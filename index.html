@@ -39,79 +39,67 @@
 
 <h2>🆕 أحدث الخلفيات</h2>
 
-<div class="wall-slider">
+.wall-slider {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
 
-    <div class="wall-card">
-        <img src="images/1.jpg" alt="خلفية هاتف">
-        <a href="images/1.jpg" download="WallDex-1.jpg" class="download-btn">
-            ⬇ تحميل الخلفية
-        </a>
-    </div>
+.wall-slider::-webkit-scrollbar {
+    display: none;
+}
 
-    <div class="wall-card">
-        <img src="images/2.jpg" alt="خلفية هاتف">
-        <a href="images/2.jpg" download="WallDex-2.jpg" class="download-btn">
-            ⬇ تحميل الخلفية
-        </a>
-    </div>
+.wall-card {
+    flex: 0 0 260px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 22px;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    scroll-snap-align: start;
+    backdrop-filter: blur(8px);
+}
 
-    <div class="wall-card">
-        <img src="images/3.jpg" alt="خلفية هاتف">
-        <a href="images/3.jpg" download="WallDex-3.jpg" class="download-btn">
-            ⬇ تحميل الخلفية
-        </a>
-    </div>
+.wall-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+}
 
-    <div class="wall-card">
-        <img src="images/4.jpg" alt="خلفية هاتف">
-        <a href="images/4.jpg" download="WallDex-4.jpg" class="download-btn">
-            ⬇ تحميل الخلفية
-        </a>
-    </div>
+.download-btn {
+    display: block;
+    margin-top: 12px;
+    padding: 12px 8px;
+    border-radius: 14px;
+    background: #6c8cff;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Cairo, sans-serif;
+}
 
-    <div class="wall-card">
-        <img src="images/5.jpg" alt="خلفية هاتف">
-        <a href="images/5.jpg" download="WallDex-5.jpg" class="download-btn">
-            ⬇ تحميل الخلفية
-        </a>
-    </div>
+@media (max-width: 600px) {
 
-    <div class="wall-card">
-        <img src="images/6.jpg" alt="خلفية هاتف">
-        <a href="images/6.jpg" download="WallDex-6.jpg" class="download-btn">
-            ⬇ تحميل الخلفية
-        </a>
-    </div>
+    .wall-slider {
+        gap: 14px;
+        padding: 15px;
+    }
 
-    <div class="wall-card">
-        <img src="images/7.jpg" alt="خلفية هاتف">
-        <a href="images/7.jpg" download="WallDex-7.jpg" class="download-btn">
-            ⬇ تحميل الخلفية
-        </a>
-    </div>
+    .wall-card {
+        flex: 0 0 240px;
+    }
 
-    <div class="wall-card">
-        <img src="images/8.jpg" alt="خلفية هاتف">
-        <a href="images/8.jpg" download="WallDex-8.jpg" class="download-btn">
-            ⬇ تحميل الخلفية
-        </a>
-    </div>
-
-    <div class="wall-card">
-        <img src="images/9.jpg" alt="خلفية هاتف">
-        <a href="images/9.jpg" download="WallDex-9.jpg" class="download-btn">
-            ⬇ تحميل الخلفية
-        </a>
-    </div>
-
-    <div class="wall-card">
-        <img src="images/10.jpg" alt="خلفية هاتف">
-        <a href="images/10.jpg" download="WallDex-10.jpg" class="download-btn">
-            ⬇ تحميل الخلفية
-        </a>
-    </div>
-
-</div>
+    .wall-card img {
+        height: 360px;
+    }
+}
 
 </section>
 
